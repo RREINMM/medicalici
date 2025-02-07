@@ -41,16 +41,9 @@ export const Specialties = () => {
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-medical-600 to-medical-800 bg-clip-text text-transparent">
             Nos Programmes De Formation
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Medicalici est un centre de formation certifié Qualiopi, spécialisé dans la formation continue pour les professionnels de la santé.
           </p>
-          <div className="flex justify-center">
-            <img 
-              src="/lovable-uploads/ab6601c7-8a62-4191-a62d-3a3db27e5a33.png" 
-              alt="Certification Qualiopi" 
-              className="h-40 w-auto"
-            />
-          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {formations.map((formation, index) => (
