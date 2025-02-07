@@ -1,6 +1,6 @@
 import { 
-  UserRound,
-  Users,
+  Stethoscope,
+  Syringe,
   BookOpen,
   GraduationCap
 } from "lucide-react";
@@ -8,12 +8,12 @@ import { Card } from "@/components/ui/card";
 
 const formations = [
   { 
-    icon: UserRound, 
+    icon: Stethoscope, 
     name: "Médecine Générale", 
     description: "Gestion des urgences médicales, prévention des maladies chroniques, techniques de consultation" 
   },
   { 
-    icon: Users, 
+    icon: Syringe, 
     name: "Spécialités Médicales", 
     description: "Cardiologie, Dermatologie, Gynécologie, Neurologie, Ophtalmologie, Pédiatrie" 
   },
