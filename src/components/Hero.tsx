@@ -33,11 +33,6 @@ export const Hero = () => {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-72 h-72 bg-medical-200 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
             <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-beige-300 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
-            <img
-              src="/lovable-uploads/643335c2-d3fc-4996-b5c7-68c38808f3de.png"
-              alt="Medical Professional"
-              className="relative z-10 w-full max-w-lg mx-auto rounded-2xl shadow-xl"
-            />
           </div>
         </div>
       </div>
