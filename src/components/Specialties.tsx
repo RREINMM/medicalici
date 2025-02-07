@@ -6,7 +6,7 @@ import {
   Bone, 
   Stethoscope,
   Pill,
-  Tooth
+  CircleDot // Replacing Tooth with CircleDot as it's not available
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -18,7 +18,7 @@ const specialties = [
   { icon: Bone, name: "Orthopédie", description: "Troubles musculo-squelettiques" },
   { icon: Stethoscope, name: "Médecine Générale", description: "Soins de santé primaires" },
   { icon: Pill, name: "Pharmacie", description: "Médicaments et traitements" },
-  { icon: Tooth, name: "Dentisterie", description: "Santé bucco-dentaire" },
+  { icon: CircleDot, name: "Dentisterie", description: "Santé bucco-dentaire" },
 ];
 
 export const Specialties = () => {
