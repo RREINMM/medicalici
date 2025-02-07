@@ -7,14 +7,14 @@ export const Hero = () => {
     <div className="relative bg-medical-500 text-white py-20 px-4">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-          Votre santé, notre priorité
+          Centre de formation dédié aux professionnels de la santé
         </h1>
         <p className="text-xl mb-8 text-medical-100">
-          Trouvez des informations médicales fiables et des professionnels de santé qualifiés
+          Nous offrons des programmes de formation de haute qualité, conçus pour répondre aux besoins évolutifs des praticiens et intégrer les dernières avancées médicales.
         </p>
         <div className="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
           <Input
-            placeholder="Rechercher une spécialité, un symptôme..."
+            placeholder="Rechercher une formation..."
             className="bg-white text-gray-900 h-12"
           />
           <Button className="bg-medical-700 hover:bg-medical-600 h-12 px-8">
