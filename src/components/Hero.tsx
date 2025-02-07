@@ -7,11 +7,13 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-grid-medical-100/25 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 relative">
         <div className="sticky top-4 z-50 flex justify-center mb-12 transition-all duration-300">
-          <img 
-            src="/lovable-uploads/e389f900-bbfd-4caa-a7ba-c7b4e1bd4e4b.png" 
-            alt="Medicalici Logo" 
-            className="h-24 md:h-32 w-auto animate-fade-in hover:scale-105 transition-transform duration-300"
-          />
+          <div className="bg-white/95 p-4 rounded-2xl shadow-lg backdrop-blur-sm">
+            <img 
+              src="/lovable-uploads/e389f900-bbfd-4caa-a7ba-c7b4e1bd4e4b.png" 
+              alt="Medicalici Logo" 
+              className="h-24 md:h-32 w-auto animate-fade-in hover:scale-105 transition-transform duration-300"
+            />
+          </div>
         </div>
         <div className="text-center lg:text-left space-y-8 max-w-3xl mx-auto lg:mx-0">
           <div className="space-y-4">
