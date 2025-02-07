@@ -3,8 +3,18 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <div className="relative bg-gradient-to-br from-white via-medical-50 to-medical-100 min-h-screen">
-      <div className="absolute inset-0 bg-grid-medical-100/25 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]" />
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Background gradient and overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-medical-50/90 to-medical-100/90" />
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=2000")',
+          filter: 'brightness(0.9)',
+          zIndex: -1
+        }}
+      />
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 relative">
         <div className="sticky top-4 z-50 flex justify-center mb-12 transition-all duration-300">
           <div className="bg-white/95 p-4 rounded-2xl shadow-lg backdrop-blur-sm">
@@ -15,7 +25,8 @@ export const Hero = () => {
             />
           </div>
         </div>
-        <div className="text-center lg:text-left space-y-8 max-w-3xl mx-auto lg:mx-0">
+        
+        <div className="text-center lg:text-left space-y-8 max-w-3xl mx-auto lg:mx-0 bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl">
           <div className="space-y-4">
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">
               <span className="bg-gradient-to-r from-medical-600 to-medical-800 bg-clip-text text-transparent">
@@ -46,7 +57,6 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-white to-transparent" />
     </div>
   );
 };
