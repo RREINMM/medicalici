@@ -31,7 +31,7 @@ const formations = [
 
 export const Specialties = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-white to-medical-50">
+    <section className="py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-medical-600 to-medical-800 bg-clip-text text-transparent">
@@ -43,9 +43,12 @@ export const Specialties = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {formations.map((formation, index) => (
-            <Card key={index} className="p-8 hover:shadow-xl transition-shadow bg-white/50 backdrop-blur-sm border border-medical-100/50">
-              <div className="bg-gradient-to-br from-medical-100 to-medical-200 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <formation.icon className="w-8 h-8 text-medical-600" />
+            <Card 
+              key={index} 
+              className="p-8 hover:shadow-xl transition-all duration-300 group bg-white hover:bg-gradient-to-br hover:from-medical-50 hover:to-medical-100 border border-medical-100"
+            >
+              <div className="bg-gradient-to-br from-medical-100 to-medical-200 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:from-medical-200 group-hover:to-medical-300 transition-colors duration-300">
+                <formation.icon className="w-8 h-8 text-medical-600 group-hover:text-medical-700" />
               </div>
               <h3 className="font-semibold text-xl mb-4 text-gray-900">{formation.name}</h3>
               <p className="text-gray-600 leading-relaxed">{formation.description}</p>
