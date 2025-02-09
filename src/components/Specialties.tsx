@@ -36,13 +36,13 @@ const formations = [
 
 export const Specialties = () => {
   return (
-    <section className="py-24 px-4 bg-slate-50">
+    <section className="py-24 px-4 bg-gradient-to-br from-[#22C55E] via-[#38BDF8] to-[#1E40AF]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-slate-800">
+          <h2 className="text-4xl font-bold mb-6 text-white">
             Nos Programmes De Formation
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Medicalici est spécialisé dans la formation continue pour les professionnels de la santé.
           </p>
         </div>
@@ -50,7 +50,7 @@ export const Specialties = () => {
           {formations.map((formation, index) => (
             <Card 
               key={index} 
-              className="group relative overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-lg bg-white border-slate-200"
+              className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl bg-white/95 border-white/20"
             >
               <div className="relative h-48 overflow-hidden">
                 <img 
@@ -58,9 +58,9 @@ export const Specialties = () => {
                   alt={formation.name}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-slate-900/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#22C55E]/50 to-[#38BDF8]/30" />
                 <div className="absolute top-4 left-4 bg-white p-3 rounded-lg shadow-md">
-                  <formation.icon className="w-6 h-6 text-slate-700" />
+                  <formation.icon className="w-6 h-6 text-[#22C55E]" />
                 </div>
               </div>
               <div className="p-6">
