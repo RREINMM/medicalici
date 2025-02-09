@@ -51,13 +51,13 @@ export const Hero = () => {
               </span>
               <br />
               <span className="text-blue-900">
-                Continue
+                Continue 🎓
               </span>
             </h1>
             <p className="text-xl text-blue-700 max-w-2xl mx-auto lg:mx-0">
-              Centre de formation certifié pour les professionnels de santé.
+              Centre de formation certifié pour les professionnels de santé ⚕️
               <br />
-              Des programmes adaptés à vos besoins et à votre emploi du temps.
+              Des programmes adaptés à vos besoins et à votre emploi du temps ⏰
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button 
@@ -79,4 +79,3 @@ export const Hero = () => {
     </div>
   );
 };
-

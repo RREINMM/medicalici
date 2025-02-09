@@ -10,7 +10,7 @@ import { Card } from "@/components/ui/card";
 const formations = [
   { 
     icon: Stethoscope, 
-    name: "Compétences métier et spécialisation", 
+    name: "Compétences métier et spécialisation 🔬", 
     description: "Développement approfondi des compétences en soins, prévention et gestion sanitaire. Nos formations couvrent les dernières avancées médicales et les protocoles de soins actualisés. Vous bénéficierez d'une expertise pratique directement applicable dans votre quotidien professionnel.",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
     subPoints: [
@@ -21,7 +21,7 @@ const formations = [
   },
   { 
     icon: UserCog, 
-    name: "Santé, hygiène et sécurité alimentaire", 
+    name: "Santé, hygiène et sécurité alimentaire 🧬", 
     description: "Formation complète aux bonnes pratiques pour garantir une offre conforme aux exigences de santé publique. Apprenez les protocoles d'hygiène essentiels et les normes de sécurité alimentaire en vigueur dans le secteur médical et paramédical.",
     image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=800&q=80",
     subPoints: [
@@ -32,7 +32,7 @@ const formations = [
   },
   { 
     icon: ShieldCheck, 
-    name: "Prévention des risques", 
+    name: "Prévention des risques 🛡️", 
     description: "Programme intensif de formation à la gestion des risques sanitaires, à l'application des normes d'hygiène et au suivi des protocoles qualité. Maîtrisez les techniques de prévention des infections nosocomiales et la gestion des risques en établissement de santé.",
     image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=800&q=80",
     subPoints: [
@@ -43,7 +43,7 @@ const formations = [
   },
   { 
     icon: MonitorSmartphone, 
-    name: "Accompagnement digital", 
+    name: "Accompagnement digital 💻", 
     description: "Modernisez vos pratiques médicales grâce à la digitalisation. Découvrez comment intégrer les nouvelles technologies dans votre pratique quotidienne tout en maintenant la qualité des soins et la sécurité des patients.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
     subPoints: [
@@ -60,11 +60,11 @@ export const Specialties = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 text-blue-900">
-            Nos Programmes De Formation
+            Nos Programmes De Formation 📚
           </h2>
           <p className="text-xl text-blue-700 max-w-3xl mx-auto leading-relaxed">
             Des formations conçues par des professionnels de santé, pour des professionnels de santé. 
-            Développez vos compétences avec des programmes adaptés aux réalités du terrain.
+            Développez vos compétences avec des programmes adaptés aux réalités du terrain 🎯
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

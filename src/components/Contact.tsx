@@ -9,14 +9,14 @@ export const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
-            Contactez-nous
+            Contactez-nous 📬
           </h2>
           <div className="max-w-3xl mx-auto space-y-6">
             <p className="text-xl text-blue-700">
-              Contactez-nous dès aujourd'hui pour échanger sur votre projet.
+              Contactez-nous dès aujourd'hui pour échanger sur votre projet 💡
             </p>
             <p className="text-lg text-blue-700">
-              Rejoignez MEDICALICI et développez vos compétences pour répondre aux enjeux de santé et de prévention d'aujourd'hui et de demain.
+              Rejoignez MEDICALICI et développez vos compétences pour répondre aux enjeux de santé et de prévention d'aujourd'hui et de demain ✨
             </p>
           </div>
         </div>

@@ -8,7 +8,7 @@ export const WhyChooseUs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
-            Pourquoi choisir MEDICALICI ?
+            Pourquoi choisir MEDICALICI ? 🌟
           </h2>
         </div>
 
@@ -19,7 +19,7 @@ export const WhyChooseUs = () => {
                 <Building2 className="w-12 h-12 bg-gradient-to-br from-sky-600 to-blue-600 bg-clip-text text-transparent" />
               </div>
               <h3 className="text-2xl font-semibold bg-gradient-to-r from-sky-700 to-blue-700 bg-clip-text text-transparent mb-4">
-                Un centre de formation pensé pour les professionnels
+                Un centre de formation pensé pour les professionnels 🏢
               </h3>
               <p className="text-blue-700">
                 Nous comprenons les besoins des professionnels, qu'ils soient soignants, responsables d'hygiène, restaurateurs ou acteurs du secteur sanitaire, et proposons des formations pratiques, ciblées et applicables immédiatement.
@@ -33,7 +33,7 @@ export const WhyChooseUs = () => {
                 <GraduationCap className="w-12 h-12 bg-gradient-to-br from-sky-600 to-blue-600 bg-clip-text text-transparent" />
               </div>
               <h3 className="text-2xl font-semibold bg-gradient-to-r from-sky-700 to-blue-700 bg-clip-text text-transparent mb-4">
-                Des formateurs experts et en exercice
+                Des formateurs experts et en exercice 👩‍⚕️
               </h3>
               <p className="text-blue-700">
                 Nos intervenants sont des professionnels qualifiés, issus du secteur médical et sanitaire, apportant leur expérience du terrain et les bonnes pratiques adaptées à votre métier.
@@ -47,10 +47,10 @@ export const WhyChooseUs = () => {
                 <Globe className="w-12 h-12 bg-gradient-to-br from-sky-600 to-blue-600 bg-clip-text text-transparent" />
               </div>
               <h3 className="text-2xl font-semibold bg-gradient-to-r from-sky-700 to-blue-700 bg-clip-text text-transparent mb-4">
-                Des formations adaptées aux évolutions du secteur
+                Des formations adaptées aux évolutions du secteur 🚀
               </h3>
               <p className="text-blue-700">
-                Nous intégrons les nouvelles pratiques et technologies pour accompagner les professionnels dans la transition vers des modèles plus performants et respectueux des normes sanitaires (digitalisation des services, respect des protocoles alimentaires, prévention des infections).
+                Nous intégrons les nouvelles pratiques et technologies pour accompagner les professionnels dans la transition vers des modèles plus performants et respectueux des normes sanitaires.
               </p>
             </CardContent>
           </Card>
@@ -61,7 +61,7 @@ export const WhyChooseUs = () => {
                 <Users className="w-12 h-12 bg-gradient-to-br from-sky-600 to-blue-600 bg-clip-text text-transparent" />
               </div>
               <h3 className="text-2xl font-semibold bg-gradient-to-r from-sky-700 to-blue-700 bg-clip-text text-transparent mb-4">
-                Un accompagnement humain et sur mesure
+                Un accompagnement humain et sur mesure 🤝
               </h3>
               <p className="text-blue-700">
                 Nos formations sont interactives, pédagogiques et adaptées aux contraintes professionnelles, pour garantir un apprentissage efficace et valorisant.
