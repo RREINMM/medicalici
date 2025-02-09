@@ -36,13 +36,13 @@ const formations = [
 
 export const Specialties = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-[#22C55E] via-[#38BDF8] to-[#1E40AF]">
+    <section className="py-24 px-4 bg-gradient-to-br from-green-400/90 via-blue-400/80 to-blue-500/70">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 text-white">
             Nos Programmes De Formation
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Medicalici est spécialisé dans la formation continue pour les professionnels de la santé.
           </p>
         </div>
@@ -50,7 +50,7 @@ export const Specialties = () => {
           {formations.map((formation, index) => (
             <Card 
               key={index} 
-              className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl bg-white/95 border-white/20"
+              className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:translate-y-[-4px] bg-white"
             >
               <div className="relative h-48 overflow-hidden">
                 <img 
@@ -58,9 +58,9 @@ export const Specialties = () => {
                   alt={formation.name}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#22C55E]/50 to-[#38BDF8]/30" />
-                <div className="absolute top-4 left-4 bg-white p-3 rounded-lg shadow-md">
-                  <formation.icon className="w-6 h-6 text-[#22C55E]" />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-400/20 to-blue-400/10" />
+                <div className="absolute top-4 left-4 bg-white p-3 rounded-lg shadow">
+                  <formation.icon className="w-6 h-6 text-green-500" />
                 </div>
               </div>
               <div className="p-6">
