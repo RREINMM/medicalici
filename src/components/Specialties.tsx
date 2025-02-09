@@ -36,13 +36,13 @@ const formations = [
 
 export const Specialties = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-medical-50 via-beige-50 to-medical-100">
+    <section className="py-24 px-4 bg-gradient-to-br from-[#F2FCE2] via-[#F8FFF0] to-[#E8F8D4]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-medical-600 to-medical-800 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-6 text-[#2A5A27]">
             Nos Programmes De Formation
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-[#2A5A27]/80 max-w-3xl mx-auto">
             Medicalici est spécialisé dans la formation continue pour les professionnels de la santé.
           </p>
         </div>
@@ -50,7 +50,7 @@ export const Specialties = () => {
           {formations.map((formation, index) => (
             <Card 
               key={index} 
-              className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 bg-white/80 backdrop-blur-sm border-medical-200"
+              className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 bg-white/80 backdrop-blur-sm border-[#2A5A27]/20"
             >
               <div className="absolute inset-0">
                 <img 
@@ -58,7 +58,7 @@ export const Specialties = () => {
                   alt={formation.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-medical-900/95 via-medical-800/85 to-medical-700/50" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2A5A27]/95 via-[#2A5A27]/85 to-[#2A5A27]/50" />
               </div>
               <div className="relative p-8 text-white h-full flex flex-col justify-between min-h-[380px]">
                 <div className="space-y-6">
@@ -82,3 +82,4 @@ export const Specialties = () => {
     </section>
   );
 };
+
