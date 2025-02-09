@@ -1,5 +1,5 @@
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, GraduationCap, Clock, Building2, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -8,8 +8,9 @@ export const Hero = () => {
       {/* Header Sticker */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-sky-600/95 to-blue-600/95 text-white py-2 backdrop-blur-sm shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <p className="text-sm font-medium">
-            Formation médicale continue certifiée 🏥
+          <p className="text-sm font-medium flex items-center gap-2">
+            Formation médicale continue certifiée
+            <Building2 className="w-5 h-5" style={{ stroke: '#D946EF' }} />
           </p>
           <Button 
             variant="ghost" 
@@ -51,13 +52,15 @@ export const Hero = () => {
               </span>
               <br />
               <span className="text-blue-900">
-                Continue 🎓
+                Continue <GraduationCap className="inline-block w-12 h-12" style={{ stroke: '#F97316' }} />
               </span>
             </h1>
-            <p className="text-xl text-blue-700 max-w-2xl mx-auto lg:mx-0">
-              Centre de formation certifié pour les professionnels de santé ⚕️
+            <p className="text-xl text-blue-700 max-w-2xl mx-auto lg:mx-0 flex items-center justify-center lg:justify-start gap-2 flex-wrap">
+              Centre de formation certifié pour les professionnels de santé 
+              <Users className="w-6 h-6" style={{ stroke: '#8B5CF6' }} />
               <br />
-              Des programmes adaptés à vos besoins et à votre emploi du temps ⏰
+              Des programmes adaptés à vos besoins et à votre emploi du temps
+              <Clock className="w-6 h-6" style={{ stroke: '#0EA5E9' }} />
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button 
@@ -79,3 +82,4 @@ export const Hero = () => {
     </div>
   );
 };
+
