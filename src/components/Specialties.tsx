@@ -60,13 +60,19 @@ export const Specialties = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-medical-900/95 via-medical-800/85 to-medical-700/50" />
               </div>
-              <div className="relative p-8 text-white h-full flex flex-col justify-between min-h-[320px]">
-                <div>
-                  <div className="bg-white/20 backdrop-blur-lg w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 border border-white/30">
-                    <formation.icon className="w-8 h-8 text-white" />
+              <div className="relative p-8 text-white h-full flex flex-col justify-between min-h-[380px]">
+                <div className="space-y-6">
+                  <div className="bg-white/20 backdrop-blur-lg w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 border border-white/30">
+                    <formation.icon className="w-10 h-10 text-white" />
                   </div>
-                  <h3 className="font-semibold text-xl mb-4 tracking-wide">{formation.name}</h3>
-                  <p className="leading-relaxed text-white/90 text-sm">{formation.description}</p>
+                  <div className="space-y-4">
+                    <h3 className="font-semibold text-2xl tracking-wide leading-tight">
+                      {formation.name}
+                    </h3>
+                    <p className="leading-relaxed text-white/90 text-base tracking-wide">
+                      {formation.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             </Card>
