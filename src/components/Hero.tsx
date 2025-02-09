@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen">
       {/* Background gradient and overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-50/90 via-blue-100/90 to-cyan-50/90" />
+      <div className="fixed inset-0 bg-gradient-to-br from-sky-50/90 via-blue-100/90 to-cyan-50/90" />
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="fixed inset-0 bg-cover bg-center"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=2000")',
           filter: 'brightness(0.9)',
@@ -18,7 +18,7 @@ export const Hero = () => {
       
       {/* Main content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative">
-        <div className="sticky top-8 z-40 flex justify-center mb-12">
+        <div className="fixed top-8 left-1/2 transform -translate-x-1/2 z-40 flex justify-center mb-12">
           <div className="bg-white/95 p-4 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
             <img 
               src="/lovable-uploads/e389f900-bbfd-4caa-a7ba-c7b4e1bd4e4b.png" 
@@ -28,7 +28,7 @@ export const Hero = () => {
           </div>
         </div>
         
-        <div className="text-center lg:text-left space-y-8 max-w-3xl mx-auto lg:mx-0">
+        <div className="pt-48 text-center lg:text-left space-y-8 max-w-3xl mx-auto lg:mx-0">
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl space-y-4 transition-all duration-300 hover:shadow-2xl hover:bg-white/90">
             <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
               <GraduationCap className="w-8 h-8 text-blue-600" />
