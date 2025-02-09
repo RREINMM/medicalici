@@ -39,7 +39,9 @@ export const Hero = () => {
               </span>
             </h1>
             <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0">
-              Centre de formation certifié pour les professionnels de santé. Des programmes adaptés à vos besoins et à votre emploi du temps.
+              Centre de formation certifié pour les professionnels de santé.
+              <br />
+              Des programmes adaptés à vos besoins et à votre emploi du temps.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button 
