@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Background gradient and overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/90 via-purple-50/90 to-blue-50/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/90 via-teal-100/90 to-cyan-50/90" />
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -30,27 +30,27 @@ export const Hero = () => {
         <div className="text-center lg:text-left space-y-8 max-w-3xl mx-auto lg:mx-0">
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl space-y-4 transition-all duration-300 hover:shadow-2xl hover:bg-white/90">
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">
-              <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
                 Formation Médicale
               </span>
               <br />
-              <span className="text-gray-900">
+              <span className="text-teal-900">
                 Continue
               </span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0">
               Centre de formation certifié pour les professionnels de santé. Des programmes adaptés à vos besoins et à votre emploi du temps.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button 
-                className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white rounded-full px-8 py-6 text-lg flex items-center gap-2 transition-all hover:gap-4 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white rounded-full px-8 py-6 text-lg flex items-center gap-2 transition-all hover:gap-4 shadow-lg hover:shadow-xl"
               >
                 Commencer maintenant
                 <ArrowRight className="w-5 h-5" />
               </Button>
               <Button 
                 variant="outline"
-                className="rounded-full px-8 py-6 text-lg border-indigo-200 hover:bg-indigo-50 text-indigo-700"
+                className="rounded-full px-8 py-6 text-lg border-teal-200 hover:bg-teal-50 text-teal-700"
               >
                 En savoir plus
               </Button>
