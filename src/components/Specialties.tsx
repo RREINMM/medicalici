@@ -56,13 +56,13 @@ const formations = [
 
 export const Specialties = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-medical-100 via-medical-200 to-medical-50">
+    <section className="py-24 px-4 bg-gradient-to-br from-emerald-50 via-teal-100 to-cyan-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-medical-900">
+          <h2 className="text-4xl font-bold mb-6 text-teal-900">
             Nos Programmes De Formation
           </h2>
-          <p className="text-xl text-medical-700 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-teal-700 max-w-3xl mx-auto leading-relaxed">
             Des formations conçues par des professionnels de santé, pour des professionnels de santé. 
             Développez vos compétences avec des programmes adaptés aux réalités du terrain.
           </p>
@@ -79,22 +79,22 @@ export const Specialties = () => {
                   alt={formation.name}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-medical-900/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent" />
                 <div className="absolute top-4 left-4 bg-white p-3 rounded-lg shadow-md">
-                  <formation.icon className="w-6 h-6 text-medical-600" />
+                  <formation.icon className="w-6 h-6 text-teal-600" />
                 </div>
               </div>
               <div className="p-8">
-                <h3 className="font-bold text-2xl text-medical-900 mb-4">
+                <h3 className="font-bold text-2xl text-teal-900 mb-4">
                   {formation.name}
                 </h3>
-                <p className="text-medical-600 text-lg leading-relaxed mb-6">
+                <p className="text-teal-600 text-lg leading-relaxed mb-6">
                   {formation.description}
                 </p>
                 <ul className="space-y-3">
                   {formation.subPoints.map((point, idx) => (
-                    <li key={idx} className="flex items-center text-medical-700">
-                      <div className="w-2 h-2 rounded-full bg-medical-500 mr-3" />
+                    <li key={idx} className="flex items-center text-teal-700">
+                      <div className="w-2 h-2 rounded-full bg-teal-500 mr-3" />
                       {point}
                     </li>
                   ))}
