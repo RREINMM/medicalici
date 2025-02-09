@@ -18,9 +18,6 @@ export const Contact = () => {
             <p className="text-lg text-teal-700">
               Rejoignez MEDICALICI et développez vos compétences pour répondre aux enjeux de santé et de prévention d'aujourd'hui et de demain.
             </p>
-            <p className="text-lg text-teal-700 italic">
-              Un site web structuré et professionnel, mettant en avant une approche élargie de la santé et de la prévention tout en restant ancré dans le secteur médical. 🚀
-            </p>
           </div>
         </div>
 
