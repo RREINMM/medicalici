@@ -1,35 +1,35 @@
 
 import { 
   Stethoscope,
-  Syringe,
-  BookOpen,
-  GraduationCap
+  UserCog,
+  ShieldCheck,
+  MonitorSmartphone
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const formations = [
   { 
     icon: Stethoscope, 
-    name: "Médecine Générale", 
-    description: "Gestion des urgences médicales, prévention des maladies chroniques, techniques de consultation",
+    name: "Compétences métier et spécialisation", 
+    description: "Développement des compétences en soins, prévention et gestion sanitaire",
     image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=800&q=80"
   },
   { 
-    icon: Syringe, 
-    name: "Spécialités Médicales", 
-    description: "Cardiologie, Dermatologie, Gynécologie, Neurologie, Ophtalmologie, Pédiatrie",
+    icon: UserCog, 
+    name: "Santé, hygiène et sécurité alimentaire", 
+    description: "Apprentissage des bonnes pratiques pour garantir une offre conforme aux exigences de santé publique",
     image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80"
   },
   { 
-    icon: BookOpen, 
-    name: "Déontologie et Réglementation", 
-    description: "Éthique professionnelle, réglementation et fiscalité",
+    icon: ShieldCheck, 
+    name: "Prévention des risques", 
+    description: "Formation à la gestion des risques, à l'application des normes d'hygiène et au suivi des protocoles qualité",
     image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80"
   },
   { 
-    icon: GraduationCap, 
-    name: "Formation Continue", 
-    description: "Gestion des risques médicaux, nutrition et diététique clinique, soins palliatifs",
+    icon: MonitorSmartphone, 
+    name: "Accompagnement digital", 
+    description: "Adaptation des services aux évolutions du secteur et digitalisation des pratiques de santé",
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80"
   },
 ];
@@ -43,7 +43,7 @@ export const Specialties = () => {
             Nos Programmes De Formation
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Medicalici est spécialisé dans la formation continue pour les professionnels de la santé.
+            Des formations conçues pour les professionnels de la santé, de la prévention et de l'hygiène
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
