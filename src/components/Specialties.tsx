@@ -36,13 +36,13 @@ const formations = [
 
 export const Specialties = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-[#1A7A8C]/90 via-[#2A5A27]/80 to-[#0EA5E9]/70">
+    <section className="py-24 px-4 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-white drop-shadow-lg">
+          <h2 className="text-4xl font-bold mb-6 text-slate-800">
             Nos Programmes De Formation
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Medicalici est spécialisé dans la formation continue pour les professionnels de la santé.
           </p>
         </div>
@@ -50,30 +50,26 @@ export const Specialties = () => {
           {formations.map((formation, index) => (
             <Card 
               key={index} 
-              className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 bg-white/5 backdrop-blur-md border-white/10"
+              className="group relative overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-lg bg-white border-slate-200"
             >
-              <div className="absolute inset-0">
+              <div className="relative h-48 overflow-hidden">
                 <img 
                   src={formation.image} 
                   alt={formation.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1A7A8C]/95 via-[#2A5A27]/80 to-transparent" />
-              </div>
-              <div className="relative p-8 text-white h-full flex flex-col justify-between min-h-[380px]">
-                <div className="space-y-6">
-                  <div className="bg-white/10 backdrop-blur-lg w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 border border-white/20">
-                    <formation.icon className="w-10 h-10 text-white" />
-                  </div>
-                  <div className="space-y-4">
-                    <h3 className="font-semibold text-2xl tracking-wide leading-tight">
-                      {formation.name}
-                    </h3>
-                    <p className="leading-relaxed text-white/90 text-base tracking-wide">
-                      {formation.description}
-                    </p>
-                  </div>
+                <div className="absolute inset-0 bg-slate-900/50" />
+                <div className="absolute top-4 left-4 bg-white p-3 rounded-lg shadow-md">
+                  <formation.icon className="w-6 h-6 text-slate-700" />
                 </div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-semibold text-xl text-slate-800 mb-3">
+                  {formation.name}
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {formation.description}
+                </p>
               </div>
             </Card>
           ))}
