@@ -36,10 +36,10 @@ const formations = [
 
 export const Specialties = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-[#2A5A27] via-[#1A7A8C] to-[#0EA5E9]">
+    <section className="py-24 px-4 bg-gradient-to-br from-[#1A7A8C]/90 via-[#2A5A27]/80 to-[#0EA5E9]/70">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-white">
+          <h2 className="text-4xl font-bold mb-6 text-white drop-shadow-lg">
             Nos Programmes De Formation
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
@@ -50,7 +50,7 @@ export const Specialties = () => {
           {formations.map((formation, index) => (
             <Card 
               key={index} 
-              className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 bg-white/10 backdrop-blur-sm border-white/20"
+              className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 bg-white/5 backdrop-blur-md border-white/10"
             >
               <div className="absolute inset-0">
                 <img 
@@ -58,11 +58,11 @@ export const Specialties = () => {
                   alt={formation.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2A5A27]/95 via-[#1A7A8C]/85 to-[#0EA5E9]/50" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1A7A8C]/95 via-[#2A5A27]/80 to-transparent" />
               </div>
               <div className="relative p-8 text-white h-full flex flex-col justify-between min-h-[380px]">
                 <div className="space-y-6">
-                  <div className="bg-white/20 backdrop-blur-lg w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 border border-white/30">
+                  <div className="bg-white/10 backdrop-blur-lg w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 border border-white/20">
                     <formation.icon className="w-10 h-10 text-white" />
                   </div>
                   <div className="space-y-4">
