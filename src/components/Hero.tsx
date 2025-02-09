@@ -5,25 +5,6 @@ import { Button } from "@/components/ui/button";
 export const Hero = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* Header Sticker */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-sky-600/95 to-blue-600/95 text-white py-2 backdrop-blur-sm shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <Heart className="w-4 h-4" />
-            <p className="text-sm font-medium">
-              Formation médicale continue certifiée 🏥
-            </p>
-          </div>
-          <Button 
-            variant="ghost" 
-            className="text-white hover:text-white/90 text-sm px-4 py-1 flex items-center gap-2"
-          >
-            Contactez-nous
-            <ArrowRight className="w-4 h-4" />
-          </Button>
-        </div>
-      </div>
-
       {/* Background gradient and overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-sky-50/90 via-blue-100/90 to-cyan-50/90" />
       <div 
@@ -35,9 +16,9 @@ export const Hero = () => {
         }}
       />
       
-      {/* Main content with adjusted top padding to account for header sticker */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16 relative">
-        <div className="sticky top-16 z-40 flex justify-center mb-12">
+      {/* Main content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative">
+        <div className="sticky top-8 z-40 flex justify-center mb-12">
           <div className="bg-white/95 p-4 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
             <img 
               src="/lovable-uploads/e389f900-bbfd-4caa-a7ba-c7b4e1bd4e4b.png" 
