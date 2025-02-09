@@ -40,7 +40,7 @@ export const Contact = () => {
               <p>Numéro de déclaration d'activité : 11756984975</p>
             </div>
             <div className="text-center text-gray-500 text-sm mt-4">
-              <p>© 2024 MedicalICI. Tous droits réservés.</p>
+              <p>© 2024 Medicalici. Tous droits réservés.</p>
             </div>
           </div>
         </footer>
