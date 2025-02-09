@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -33,11 +34,6 @@ export const Contact = () => {
 
         <footer className="mt-16 border-t pt-8">
           <div className="flex flex-col items-center space-y-6">
-            <img 
-              src="/lovable-uploads/4c6f8f6d-5a43-48f9-bf9c-4b92afcbf3f0.png" 
-              alt="MedicalICI Logo" 
-              className="h-16 w-auto"
-            />
             <div className="text-center text-gray-600 space-y-2">
               <p>N° SIRET : 92476373300012</p>
               <p>Code NAF : 8559A - Formation continue d'adultes</p>
