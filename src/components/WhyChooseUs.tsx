@@ -1,18 +1,14 @@
 
-import { Building2, GraduationCap, Globe, Users, Leaf, Sprout } from "lucide-react";
+import { Building2, GraduationCap, Globe, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const WhyChooseUs = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-sky-50 via-blue-100 to-green-50/30">
+    <section className="py-24 bg-gradient-to-br from-sky-50 via-blue-100 to-cyan-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="flex justify-center gap-3 mb-4">
-            <Leaf className="w-8 h-8 text-green-500 animate-bounce" />
-            <Sprout className="w-8 h-8 text-green-600" />
-          </div>
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-sky-600 via-blue-600 to-green-600 bg-clip-text text-transparent">
-            Pourquoi choisir MEDICALICI ? 🌱
+          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
+            Pourquoi choisir MEDICALICI ? 🌟
           </h2>
         </div>
 
