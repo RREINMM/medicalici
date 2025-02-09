@@ -41,13 +41,13 @@ export const Hero = () => {
               </span>
               <br />
               <span className="bg-gradient-to-r from-blue-900 via-blue-700 to-green-700 bg-clip-text text-transparent">
-                Continue 🎓
+                Continue <span className="text-yellow-500">🎓</span>
               </span>
             </h1>
             <p className="text-xl bg-gradient-to-r from-blue-700 via-sky-600 to-green-600 bg-clip-text text-transparent max-w-2xl mx-auto lg:mx-0">
-              Centre de formation certifié pour les professionnels de santé ⚕️
+              Centre de formation certifié pour les professionnels de santé <span className="text-blue-500">⚕️</span>
               <br />
-              Des programmes adaptés à vos besoins et à votre emploi du temps ⏰
+              Des programmes adaptés à vos besoins et à votre emploi du temps <span className="text-green-500">⏰</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button 
