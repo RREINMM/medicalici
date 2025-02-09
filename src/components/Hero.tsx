@@ -1,5 +1,5 @@
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, GraduationCap, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -8,14 +8,18 @@ export const Hero = () => {
       {/* Header Sticker */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-sky-600/95 to-blue-600/95 text-white py-2 backdrop-blur-sm shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <p className="text-sm font-medium">
-            Formation médicale continue certifiée 🏥
-          </p>
+          <div className="flex items-center gap-2">
+            <Heart className="w-4 h-4" />
+            <p className="text-sm font-medium">
+              Formation médicale continue certifiée 🏥
+            </p>
+          </div>
           <Button 
             variant="ghost" 
-            className="text-white hover:text-white/90 text-sm px-4 py-1"
+            className="text-white hover:text-white/90 text-sm px-4 py-1 flex items-center gap-2"
           >
             Contactez-nous
+            <ArrowRight className="w-4 h-4" />
           </Button>
         </div>
       </div>
@@ -45,6 +49,10 @@ export const Hero = () => {
         
         <div className="text-center lg:text-left space-y-8 max-w-3xl mx-auto lg:mx-0">
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl space-y-4 transition-all duration-300 hover:shadow-2xl hover:bg-white/90">
+            <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
+              <GraduationCap className="w-8 h-8 text-blue-600" />
+              <Star className="w-6 h-6 text-blue-600" />
+            </div>
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">
               <span className="bg-gradient-to-r from-sky-600 to-blue-600 bg-clip-text text-transparent">
                 Formation Médicale
@@ -68,9 +76,10 @@ export const Hero = () => {
               </Button>
               <Button 
                 variant="outline"
-                className="rounded-full px-8 py-6 text-lg border-blue-200 hover:bg-blue-50 text-blue-700"
+                className="rounded-full px-8 py-6 text-lg border-blue-200 hover:bg-blue-50 text-blue-700 flex items-center gap-2"
               >
                 En savoir plus
+                <ArrowRight className="w-5 h-5" />
               </Button>
             </div>
           </div>
