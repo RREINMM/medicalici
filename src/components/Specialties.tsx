@@ -56,7 +56,7 @@ const formations = [
 
 export const Specialties = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-medical-100 via-blue-100 to-medical-50">
+    <section className="py-24 px-4 bg-gradient-to-br from-medical-100 via-medical-200 to-medical-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 text-medical-900">
