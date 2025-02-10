@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -31,7 +30,7 @@ export const Hero = () => {
         }}
       />
       
-      {/* Main content with adjusted top padding to account for header sticker */}
+      {/* Main content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16 relative">
         <div className="sticky top-16 z-40 flex justify-center mb-12">
           <div className="bg-white/95 p-4 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
@@ -54,7 +53,7 @@ export const Hero = () => {
                 Continue <span className="text-[#8B5CF6]">🚀</span>
               </span>
             </h1>
-            <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0 flex flex-col gap-4">
+            <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0 flex flex-col gap-2">
               <span>
                 Centre de formation certifié pour les professionnels de santé <span className="text-[#0EA5E9]">👨‍⚕️</span>
               </span>

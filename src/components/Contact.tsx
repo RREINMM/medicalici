@@ -11,11 +11,11 @@ export const Contact = () => {
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
             Contactez-nous
           </h2>
-          <div className="max-w-3xl mx-auto flex flex-col gap-6">
+          <div className="max-w-3xl mx-auto flex flex-col gap-2">
             <p className="text-xl text-teal-700">
               Contactez-nous dès aujourd'hui pour échanger sur votre projet.
             </p>
-            <p className="text-lg text-teal-700 flex flex-col gap-4">
+            <p className="text-lg text-teal-700 flex flex-col gap-2">
               <span>
                 Rejoignez MEDICALICI et développez vos compétences.
               </span>
@@ -43,13 +43,13 @@ export const Contact = () => {
         </div>
 
         <footer className="mt-16 border-t border-teal-200 pt-8">
-          <div className="flex flex-col items-center space-y-6">
-            <div className="text-center text-teal-700 flex flex-col gap-2">
+          <div className="flex flex-col items-center space-y-2">
+            <div className="text-center text-teal-700 flex flex-col gap-1">
               <p>N° SIRET : 92476373300012</p>
               <p>Code NAF : 8559A - Formation continue d'adultes</p>
               <p>Numéro de déclaration d'activité : 11756984975</p>
             </div>
-            <div className="text-center text-teal-600 text-sm mt-4">
+            <div className="text-center text-teal-600 text-sm mt-2">
               <p>© 2024 Medicalici. Tous droits réservés.</p>
             </div>
           </div>

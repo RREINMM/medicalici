@@ -1,4 +1,3 @@
-
 import { Building2, GraduationCap, Globe, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -7,9 +6,17 @@ export const WhyChooseUs = () => {
     <section className="py-24 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
-            Pourquoi choisir MEDICALICI ?
+          <h2 className="text-4xl font-bold mb-6 text-teal-900">
+            Nos Programmes De Formation
           </h2>
+          <p className="text-xl text-teal-700 max-w-3xl mx-auto leading-relaxed flex flex-col gap-2">
+            <span>
+              Des formations conçues par des professionnels de santé, pour des professionnels de santé.
+            </span>
+            <span>
+              Développez vos compétences avec des programmes adaptés aux réalités du terrain.
+            </span>
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
