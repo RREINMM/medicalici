@@ -1,3 +1,4 @@
+
 import { Building2, GraduationCap, Globe, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -9,7 +10,7 @@ export const WhyChooseUs = () => {
           <h2 className="text-4xl font-bold mb-6 text-teal-900">
             Nos Programmes De Formation
           </h2>
-          <p className="text-xl text-teal-700 max-w-3xl mx-auto leading-relaxed flex flex-col gap-2">
+          <p className="text-xl text-teal-700 max-w-3xl mx-auto leading-relaxed flex flex-col gap-1">
             <span>
               Des formations conçues par des professionnels de santé, pour des professionnels de santé.
             </span>
@@ -100,3 +101,4 @@ export const WhyChooseUs = () => {
     </section>
   );
 };
+

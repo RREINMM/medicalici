@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -53,7 +54,7 @@ export const Hero = () => {
                 Continue <span className="text-[#8B5CF6]">🚀</span>
               </span>
             </h1>
-            <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0 flex flex-col gap-2">
+            <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0 flex flex-col gap-1">
               <span>
                 Centre de formation certifié pour les professionnels de santé <span className="text-[#0EA5E9]">👨‍⚕️</span>
               </span>
@@ -81,3 +82,4 @@ export const Hero = () => {
     </div>
   );
 };
+
