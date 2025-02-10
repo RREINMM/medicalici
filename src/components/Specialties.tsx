@@ -11,7 +11,7 @@ const formations = [
   { 
     icon: Stethoscope, 
     name: "Compétences métier et spécialisation", 
-    description: "Développement approfondi des compétences en soins, prévention et gestion sanitaire.\n\nNos formations couvrent les dernières avancées médicales et les protocoles de soins actualisés.\n\nVous bénéficierez d'une expertise pratique directement applicable dans votre quotidien professionnel.",
+    description: "Développement approfondi des compétences en soins, prévention et gestion sanitaire.\nNos formations couvrent les dernières avancées médicales et les protocoles de soins actualisés.\nVous bénéficierez d'une expertise pratique directement applicable dans votre quotidien professionnel.",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
     subPoints: [
       "Protocoles de soins avancés",
@@ -56,13 +56,13 @@ const formations = [
 
 export const Specialties = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-emerald-50 via-teal-100 to-cyan-50">
+    <section className="py-16 px-4 bg-gradient-to-br from-emerald-50 via-teal-100 to-cyan-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-teal-900">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold mb-4 text-teal-900">
             Nos Programmes De Formation
           </h2>
-          <p className="text-xl text-teal-700 max-w-3xl mx-auto leading-relaxed flex flex-col gap-4">
+          <p className="text-xl text-teal-700 max-w-3xl mx-auto leading-relaxed flex flex-col gap-1">
             <span>
               Des formations conçues par des professionnels de santé, pour des professionnels de santé.
             </span>
@@ -71,13 +71,13 @@ export const Specialties = () => {
             </span>
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {formations.map((formation, index) => (
             <Card 
               key={index} 
               className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:translate-y-[-4px] hover:shadow-xl bg-white"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
                 <img 
                   src={formation.image} 
                   alt={formation.name}
@@ -88,17 +88,17 @@ export const Specialties = () => {
                   <formation.icon className="w-6 h-6 text-teal-600" />
                 </div>
               </div>
-              <div className="p-8">
-                <h3 className="font-bold text-2xl text-teal-900 mb-4">
+              <div className="p-6">
+                <h3 className="font-bold text-2xl text-teal-900 mb-2">
                   {formation.name}
                 </h3>
-                <p className="text-teal-600 text-lg leading-relaxed mb-6 whitespace-pre-line">
+                <p className="text-teal-600 text-base leading-tight whitespace-pre-line mb-4">
                   {formation.description}
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   {formation.subPoints.map((point, idx) => (
-                    <li key={idx} className="flex items-center text-teal-700">
-                      <div className="w-2 h-2 rounded-full bg-teal-500 mr-3" />
+                    <li key={idx} className="flex items-center text-teal-700 text-sm">
+                      <div className="w-1.5 h-1.5 rounded-full bg-teal-500 mr-2" />
                       {point}
                     </li>
                   ))}
