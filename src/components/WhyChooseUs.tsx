@@ -21,8 +21,13 @@ export const WhyChooseUs = () => {
               <h3 className="text-2xl font-semibold text-teal-800 mb-4">
                 Un centre de formation pensé pour les professionnels
               </h3>
-              <p className="text-teal-700">
-                Nous comprenons les besoins des professionnels, qu'ils soient soignants, responsables d'hygiène, restaurateurs ou acteurs du secteur sanitaire, et proposons des formations pratiques, ciblées et applicables immédiatement.
+              <p className="text-teal-700 flex flex-col gap-4">
+                <span>
+                  Nous comprenons les besoins des professionnels, qu'ils soient soignants, responsables d'hygiène, restaurateurs ou acteurs du secteur sanitaire.
+                </span>
+                <span>
+                  Nous proposons des formations pratiques, ciblées et applicables immédiatement.
+                </span>
               </p>
             </CardContent>
           </Card>
@@ -35,8 +40,13 @@ export const WhyChooseUs = () => {
               <h3 className="text-2xl font-semibold text-teal-800 mb-4">
                 Des formateurs experts et en exercice
               </h3>
-              <p className="text-teal-700">
-                Nos intervenants sont des professionnels qualifiés, issus du secteur médical et sanitaire, apportant leur expérience du terrain et les bonnes pratiques adaptées à votre métier.
+              <p className="text-teal-700 flex flex-col gap-4">
+                <span>
+                  Nos intervenants sont des professionnels qualifiés, issus du secteur médical et sanitaire.
+                </span>
+                <span>
+                  Ils apportent leur expérience du terrain et les bonnes pratiques adaptées à votre métier.
+                </span>
               </p>
             </CardContent>
           </Card>
@@ -49,8 +59,13 @@ export const WhyChooseUs = () => {
               <h3 className="text-2xl font-semibold text-teal-800 mb-4">
                 Des formations adaptées aux évolutions du secteur
               </h3>
-              <p className="text-teal-700">
-                Nous intégrons les nouvelles pratiques et technologies pour accompagner les professionnels dans la transition vers des modèles plus performants et respectueux des normes sanitaires (digitalisation des services, respect des protocoles alimentaires, prévention des infections).
+              <p className="text-teal-700 flex flex-col gap-4">
+                <span>
+                  Nous intégrons les nouvelles pratiques et technologies pour accompagner les professionnels dans la transition vers des modèles plus performants.
+                </span>
+                <span>
+                  Nous respectons les normes sanitaires (digitalisation des services, respect des protocoles alimentaires, prévention des infections).
+                </span>
               </p>
             </CardContent>
           </Card>
@@ -63,8 +78,13 @@ export const WhyChooseUs = () => {
               <h3 className="text-2xl font-semibold text-teal-800 mb-4">
                 Un accompagnement humain et sur mesure
               </h3>
-              <p className="text-teal-700">
-                Nos formations sont interactives, pédagogiques et adaptées aux contraintes professionnelles, pour garantir un apprentissage efficace et valorisant.
+              <p className="text-teal-700 flex flex-col gap-4">
+                <span>
+                  Nos formations sont interactives et pédagogiques.
+                </span>
+                <span>
+                  Elles sont adaptées aux contraintes professionnelles, pour garantir un apprentissage efficace et valorisant.
+                </span>
               </p>
             </CardContent>
           </Card>

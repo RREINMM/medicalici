@@ -11,7 +11,7 @@ const formations = [
   { 
     icon: Stethoscope, 
     name: "Compétences métier et spécialisation", 
-    description: "Développement approfondi des compétences en soins, prévention et gestion sanitaire. Nos formations couvrent les dernières avancées médicales et les protocoles de soins actualisés. Vous bénéficierez d'une expertise pratique directement applicable dans votre quotidien professionnel.",
+    description: "Développement approfondi des compétences en soins, prévention et gestion sanitaire.\n\nNos formations couvrent les dernières avancées médicales et les protocoles de soins actualisés.\n\nVous bénéficierez d'une expertise pratique directement applicable dans votre quotidien professionnel.",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
     subPoints: [
       "Protocoles de soins avancés",
@@ -22,7 +22,7 @@ const formations = [
   { 
     icon: UserCog, 
     name: "Santé, hygiène et sécurité alimentaire", 
-    description: "Formation complète aux bonnes pratiques pour garantir une offre conforme aux exigences de santé publique. Apprenez les protocoles d'hygiène essentiels et les normes de sécurité alimentaire en vigueur dans le secteur médical et paramédical.",
+    description: "Formation complète aux bonnes pratiques pour garantir une offre conforme aux exigences de santé publique.\n\nApprenez les protocoles d'hygiène essentiels et les normes de sécurité alimentaire en vigueur dans le secteur médical et paramédical.",
     image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=800&q=80",
     subPoints: [
       "Normes HACCP en milieu médical",
@@ -33,7 +33,7 @@ const formations = [
   { 
     icon: ShieldCheck, 
     name: "Prévention des risques", 
-    description: "Programme intensif de formation à la gestion des risques sanitaires, à l'application des normes d'hygiène et au suivi des protocoles qualité. Maîtrisez les techniques de prévention des infections nosocomiales et la gestion des risques en établissement de santé.",
+    description: "Programme intensif de formation à la gestion des risques sanitaires, à l'application des normes d'hygiène et au suivi des protocoles qualité.\n\nMaîtrisez les techniques de prévention des infections nosocomiales et la gestion des risques en établissement de santé.",
     image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=800&q=80",
     subPoints: [
       "Prévention des infections nosocomiales",
@@ -44,7 +44,7 @@ const formations = [
   { 
     icon: MonitorSmartphone, 
     name: "Accompagnement digital", 
-    description: "Modernisez vos pratiques médicales grâce à la digitalisation. Découvrez comment intégrer les nouvelles technologies dans votre pratique quotidienne tout en maintenant la qualité des soins et la sécurité des patients.",
+    description: "Modernisez vos pratiques médicales grâce à la digitalisation.\n\nDécouvrez comment intégrer les nouvelles technologies dans votre pratique quotidienne tout en maintenant la qualité des soins et la sécurité des patients.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
     subPoints: [
       "Dossier médical numérique",
@@ -62,9 +62,13 @@ export const Specialties = () => {
           <h2 className="text-4xl font-bold mb-6 text-teal-900">
             Nos Programmes De Formation
           </h2>
-          <p className="text-xl text-teal-700 max-w-3xl mx-auto leading-relaxed">
-            Des formations conçues par des professionnels de santé, pour des professionnels de santé. 
-            Développez vos compétences avec des programmes adaptés aux réalités du terrain.
+          <p className="text-xl text-teal-700 max-w-3xl mx-auto leading-relaxed flex flex-col gap-4">
+            <span>
+              Des formations conçues par des professionnels de santé, pour des professionnels de santé.
+            </span>
+            <span>
+              Développez vos compétences avec des programmes adaptés aux réalités du terrain.
+            </span>
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -88,7 +92,7 @@ export const Specialties = () => {
                 <h3 className="font-bold text-2xl text-teal-900 mb-4">
                   {formation.name}
                 </h3>
-                <p className="text-teal-600 text-lg leading-relaxed mb-6">
+                <p className="text-teal-600 text-lg leading-relaxed mb-6 whitespace-pre-line">
                   {formation.description}
                 </p>
                 <ul className="space-y-3">
