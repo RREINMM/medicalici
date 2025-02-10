@@ -1,16 +1,15 @@
 
-import { ArrowRight, GraduationCap, Clock, Building2, Users } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Header Sticker */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-sky-600/95 to-blue-600/95 text-white py-2 backdrop-blur-sm shadow-lg">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-teal-600/95 to-emerald-600/95 text-white py-2 backdrop-blur-sm shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <p className="text-sm font-medium flex items-center gap-2">
-            Formation médicale continue certifiée
-            <Building2 className="w-5 h-5" style={{ stroke: '#D946EF' }} />
+          <p className="text-sm font-medium">
+            Formation médicale continue certifiée 🏥
           </p>
           <Button 
             variant="ghost" 
@@ -22,7 +21,7 @@ export const Hero = () => {
       </div>
 
       {/* Background gradient and overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-50/90 via-blue-100/90 to-cyan-50/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/90 via-teal-100/90 to-cyan-50/90" />
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -47,31 +46,29 @@ export const Hero = () => {
         <div className="text-center lg:text-left space-y-8 max-w-3xl mx-auto lg:mx-0">
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl space-y-4 transition-all duration-300 hover:shadow-2xl hover:bg-white/90">
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">
-              <span className="bg-gradient-to-r from-sky-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
                 Formation Médicale
               </span>
               <br />
-              <span className="text-blue-900">
-                Continue <GraduationCap className="inline-block w-12 h-12" style={{ stroke: '#F97316' }} />
+              <span className="text-teal-900">
+                Continue
               </span>
             </h1>
-            <p className="text-xl text-blue-700 max-w-2xl mx-auto lg:mx-0 flex items-center justify-center lg:justify-start gap-2 flex-wrap">
-              Centre de formation certifié pour les professionnels de santé 
-              <Users className="w-6 h-6" style={{ stroke: '#8B5CF6' }} />
+            <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0">
+              Centre de formation certifié pour les professionnels de santé.
               <br />
-              Des programmes adaptés à vos besoins et à votre emploi du temps
-              <Clock className="w-6 h-6" style={{ stroke: '#0EA5E9' }} />
+              Des programmes adaptés à vos besoins et à votre emploi du temps.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button 
-                className="bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-700 hover:to-blue-700 text-white rounded-full px-8 py-6 text-lg flex items-center gap-2 transition-all hover:gap-4 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white rounded-full px-8 py-6 text-lg flex items-center gap-2 transition-all hover:gap-4 shadow-lg hover:shadow-xl"
               >
                 Commencer maintenant
                 <ArrowRight className="w-5 h-5" />
               </Button>
               <Button 
                 variant="outline"
-                className="rounded-full px-8 py-6 text-lg border-blue-200 hover:bg-blue-50 text-blue-700"
+                className="rounded-full px-8 py-6 text-lg border-teal-200 hover:bg-teal-50 text-teal-700"
               >
                 En savoir plus
               </Button>
@@ -82,4 +79,3 @@ export const Hero = () => {
     </div>
   );
 };
-
