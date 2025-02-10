@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-teal-600/95 to-emerald-600/95 text-white py-2 backdrop-blur-sm shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <p className="text-sm font-medium">
-            Formation médicale continue certifiée 🏥 ✨
+            Formation médicale continue certifiée <span className="text-[#0EA5E9]">🏥</span> <span className="text-[#F97316]">✨</span>
           </p>
           <Button 
             variant="ghost" 
@@ -47,30 +47,30 @@ export const Hero = () => {
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl space-y-4 transition-all duration-300 hover:shadow-2xl hover:bg-white/90">
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">
               <span className="bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
-                Formation Médicale 🎓
+                Formation Médicale <span className="text-[#F97316]">🎓</span>
               </span>
               <br />
               <span className="text-teal-900">
-                Continue 🚀
+                Continue <span className="text-[#8B5CF6]">🚀</span>
               </span>
             </h1>
             <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0">
-              Centre de formation certifié pour les professionnels de santé 👨‍⚕️
+              Centre de formation certifié pour les professionnels de santé <span className="text-[#0EA5E9]">👨‍⚕️</span>
               <br />
-              Des programmes adaptés à vos besoins et à votre emploi du temps ⏰
+              Des programmes adaptés à vos besoins et à votre emploi du temps <span className="text-[#D946EF]">⏰</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button 
                 className="bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white rounded-full px-8 py-6 text-lg flex items-center gap-2 transition-all hover:gap-4 shadow-lg hover:shadow-xl"
               >
-                Commencer maintenant 💫
+                Commencer maintenant <span className="text-[#F97316]">💫</span>
                 <ArrowRight className="w-5 h-5" />
               </Button>
               <Button 
                 variant="outline"
                 className="rounded-full px-8 py-6 text-lg border-teal-200 hover:bg-teal-50 text-teal-700"
               >
-                En savoir plus ℹ️
+                En savoir plus <span className="text-[#8B5CF6]">ℹ️</span>
               </Button>
             </div>
           </div>
