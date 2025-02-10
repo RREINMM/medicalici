@@ -46,15 +46,14 @@ export const Hero = () => {
         <div className="text-center lg:text-left space-y-6 sm:space-y-8 max-w-3xl mx-auto lg:mx-0">
           <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-8 rounded-2xl shadow-xl space-y-3 sm:space-y-4 transition-all duration-300 hover:shadow-2xl hover:bg-white/90">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-              <span className="bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
-                Formation Médicale <span className="text-[#F97316]">🎓</span>
+              <span className="bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent flex flex-wrap justify-center lg:justify-start items-center gap-1">
+                Formation Médicale <span className="text-[#F97316] inline-block">🎓</span>
               </span>
-              <br />
-              <span className="text-teal-900">
-                Continue <span className="text-[#8B5CF6]">🚀</span>
+              <span className="text-teal-900 flex flex-wrap justify-center lg:justify-start items-center gap-1">
+                Continue <span className="text-[#8B5CF6] inline-block">🚀</span>
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0 flex flex-col gap-1">
+            <p className="text-lg sm:text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0 flex flex-col gap-0.5">
               <span>
                 Centre de formation certifié pour les professionnels de santé <span className="text-[#0EA5E9]">👨‍⚕️</span>
               </span>
@@ -82,4 +81,3 @@ export const Hero = () => {
     </div>
   );
 };
-
