@@ -8,12 +8,12 @@ export const Hero = () => {
       {/* Header Sticker */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-teal-600/95 to-emerald-600/95 text-white py-2 backdrop-blur-sm shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <p className="text-sm font-medium">
+          <p className="text-xs sm:text-sm font-medium">
             Formation médicale continue certifiée <span className="text-[#0EA5E9]">🏥</span> <span className="text-[#F97316]">✨</span>
           </p>
           <Button 
             variant="ghost" 
-            className="text-white hover:text-white/90 text-sm px-4 py-1"
+            className="text-white hover:text-white/90 text-xs sm:text-sm px-2 sm:px-4 py-1"
           >
             Contactez-nous
           </Button>
@@ -33,19 +33,19 @@ export const Hero = () => {
       
       {/* Main content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16 relative">
-        <div className="sticky top-16 z-40 flex justify-center mb-12">
-          <div className="bg-white/95 p-4 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
+        <div className="sticky top-16 z-40 flex justify-center mb-8 sm:mb-12">
+          <div className="bg-white/95 p-3 sm:p-4 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
             <img 
               src="/lovable-uploads/e389f900-bbfd-4caa-a7ba-c7b4e1bd4e4b.png" 
               alt="Medicalici Logo" 
-              className="h-24 md:h-32 w-auto animate-fade-in hover:scale-105 transition-transform duration-300"
+              className="h-16 sm:h-24 md:h-32 w-auto animate-fade-in hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
         
-        <div className="text-center lg:text-left space-y-8 max-w-3xl mx-auto lg:mx-0">
-          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl space-y-4 transition-all duration-300 hover:shadow-2xl hover:bg-white/90">
-            <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">
+        <div className="text-center lg:text-left space-y-6 sm:space-y-8 max-w-3xl mx-auto lg:mx-0">
+          <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-8 rounded-2xl shadow-xl space-y-3 sm:space-y-4 transition-all duration-300 hover:shadow-2xl hover:bg-white/90">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight">
               <span className="bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
                 Formation Médicale <span className="text-[#F97316]">🎓</span>
               </span>
@@ -54,7 +54,7 @@ export const Hero = () => {
                 Continue <span className="text-[#8B5CF6]">🚀</span>
               </span>
             </h1>
-            <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0 flex flex-col gap-1">
+            <p className="text-lg sm:text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0 flex flex-col gap-1">
               <span>
                 Centre de formation certifié pour les professionnels de santé <span className="text-[#0EA5E9]">👨‍⚕️</span>
               </span>
@@ -62,16 +62,16 @@ export const Hero = () => {
                 Des programmes adaptés à vos besoins et à votre emploi du temps <span className="text-[#D946EF]">⏰</span>
               </span>
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-2 sm:pt-4">
               <Button 
-                className="bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white rounded-full px-8 py-6 text-lg flex items-center gap-2 transition-all hover:gap-4 shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg flex items-center gap-2 transition-all hover:gap-4 shadow-lg hover:shadow-xl w-full sm:w-auto"
               >
                 Commencer maintenant <span className="text-[#F97316]">💫</span>
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
               <Button 
                 variant="outline"
-                className="rounded-full px-8 py-6 text-lg border-teal-200 hover:bg-teal-50 text-teal-700"
+                className="rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg border-teal-200 hover:bg-teal-50 text-teal-700 w-full sm:w-auto"
               >
                 En savoir plus <span className="text-[#8B5CF6]">ℹ️</span>
               </Button>
