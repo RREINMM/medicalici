@@ -54,10 +54,13 @@ export const Hero = () => {
                 Continue <span className="text-[#8B5CF6]">🚀</span>
               </span>
             </h1>
-            <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0">
-              Centre de formation certifié pour les professionnels de santé <span className="text-[#0EA5E9]">👨‍⚕️</span>
-              <br />
-              Des programmes adaptés à vos besoins et à votre emploi du temps <span className="text-[#D946EF]">⏰</span>
+            <p className="text-xl text-teal-700 max-w-2xl mx-auto lg:mx-0 flex flex-col gap-4">
+              <span>
+                Centre de formation certifié pour les professionnels de santé <span className="text-[#0EA5E9]">👨‍⚕️</span>
+              </span>
+              <span>
+                Des programmes adaptés à vos besoins et à votre emploi du temps <span className="text-[#D946EF]">⏰</span>
+              </span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button 
@@ -79,3 +82,4 @@ export const Hero = () => {
     </div>
   );
 };
+
