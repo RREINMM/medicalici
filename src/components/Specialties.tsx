@@ -95,10 +95,10 @@ export const Specialties = () => {
                 <p className="text-teal-600 text-base leading-tight whitespace-pre-line mb-4">
                   {formation.description}
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-1">
                   {formation.subPoints.map((point, idx) => (
-                    <li key={idx} className="flex items-center text-teal-700 text-sm">
-                      <div className="w-1.5 h-1.5 rounded-full bg-teal-500 mr-2" />
+                    <li key={idx} className="flex items-start gap-1.5 text-teal-700 text-sm">
+                      <div className="w-1.5 h-1.5 rounded-full bg-teal-500 mt-1.5" />
                       {point}
                     </li>
                   ))}
