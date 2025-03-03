@@ -64,6 +64,7 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-2 sm:pt-4">
               <Button 
                 className="bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white rounded-full px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg flex items-center gap-2 transition-all hover:gap-4 shadow-lg hover:shadow-xl w-full sm:w-auto"
+                onClick={() => window.open("https://medicalici.catalogueformpro.com/", "_blank")}
               >
                 Commencer maintenant <span className="text-[#F97316]">💫</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
