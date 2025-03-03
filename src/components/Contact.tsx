@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 export const Contact = () => {
   return (
-    <section className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 py-12 sm:py-16">
+    <section id="contact" className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 py-12 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
@@ -27,15 +27,57 @@ export const Contact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <form className="space-y-4 sm:space-y-6 bg-white/80 backdrop-blur-sm p-4 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+          <form 
+            className="space-y-4 sm:space-y-6 bg-white/80 backdrop-blur-sm p-4 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
+            aria-labelledby="contact-form"
+          >
+            <div className="sr-only" id="contact-form">Formulaire de contact</div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-              <Input type="text" placeholder="Nom" className="border-teal-200 focus-visible:ring-teal-500" />
-              <Input type="email" placeholder="Email" className="border-teal-200 focus-visible:ring-teal-500" />
+              <div>
+                <label htmlFor="name" className="sr-only">Nom</label>
+                <Input 
+                  type="text" 
+                  id="name"
+                  placeholder="Nom" 
+                  className="border-teal-200 focus-visible:ring-teal-500" 
+                  aria-required="true"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="sr-only">Email</label>
+                <Input 
+                  type="email" 
+                  id="email"
+                  placeholder="Email" 
+                  className="border-teal-200 focus-visible:ring-teal-500" 
+                  aria-required="true"
+                />
+              </div>
             </div>
-            <Input type="text" placeholder="Sujet" className="border-teal-200 focus-visible:ring-teal-500" />
-            <Textarea placeholder="Message" className="h-24 sm:h-32 border-teal-200 focus-visible:ring-teal-500" />
+            <div>
+              <label htmlFor="subject" className="sr-only">Sujet</label>
+              <Input 
+                type="text" 
+                id="subject"
+                placeholder="Sujet" 
+                className="border-teal-200 focus-visible:ring-teal-500" 
+              />
+            </div>
+            <div>
+              <label htmlFor="message" className="sr-only">Message</label>
+              <Textarea 
+                placeholder="Message" 
+                id="message"
+                className="h-24 sm:h-32 border-teal-200 focus-visible:ring-teal-500" 
+                aria-required="true"
+              />
+            </div>
             <div className="text-center">
-              <Button className="w-full sm:w-auto bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
+              <Button 
+                type="submit"
+                className="w-full sm:w-auto bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                aria-label="Envoyer le message de contact"
+              >
                 Envoyer
               </Button>
             </div>
@@ -58,4 +100,3 @@ export const Contact = () => {
     </section>
   );
 };
-

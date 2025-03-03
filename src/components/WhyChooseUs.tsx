@@ -1,13 +1,14 @@
+
 import { Building2, GraduationCap, Globe, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const WhyChooseUs = () => {
   return (
-    <section className="py-12 sm:py-24 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
+    <section id="pourquoi-nous-choisir" className="py-12 sm:py-24 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-teal-900">
-            Nos Programmes De Formation
+            Pourquoi Choisir MEDICALICI
           </h2>
           <p className="text-base sm:text-xl text-teal-700 max-w-3xl mx-auto leading-relaxed flex flex-col gap-1">
             <span>
@@ -23,7 +24,7 @@ export const WhyChooseUs = () => {
           <Card className="bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
             <CardContent className="p-4 sm:p-8 flex flex-col h-full">
               <div className="mb-4 sm:mb-6">
-                <Building2 className="w-8 sm:w-12 h-8 sm:h-12 text-teal-600" />
+                <Building2 aria-hidden="true" className="w-8 sm:w-12 h-8 sm:h-12 text-teal-600" />
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold text-teal-800 mb-3 sm:mb-4">
                 Un centre de formation pensé pour les professionnels
@@ -42,7 +43,7 @@ export const WhyChooseUs = () => {
           <Card className="bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
             <CardContent className="p-4 sm:p-8 flex flex-col h-full">
               <div className="mb-4 sm:mb-6">
-                <GraduationCap className="w-8 sm:w-12 h-8 sm:h-12 text-teal-600" />
+                <GraduationCap aria-hidden="true" className="w-8 sm:w-12 h-8 sm:h-12 text-teal-600" />
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold text-teal-800 mb-3 sm:mb-4">
                 Des formateurs experts et en exercice
@@ -61,7 +62,7 @@ export const WhyChooseUs = () => {
           <Card className="bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
             <CardContent className="p-4 sm:p-8 flex flex-col h-full">
               <div className="mb-4 sm:mb-6">
-                <Globe className="w-8 sm:w-12 h-8 sm:h-12 text-teal-600" />
+                <Globe aria-hidden="true" className="w-8 sm:w-12 h-8 sm:h-12 text-teal-600" />
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold text-teal-800 mb-3 sm:mb-4">
                 Des formations adaptées aux évolutions du secteur
@@ -80,7 +81,7 @@ export const WhyChooseUs = () => {
           <Card className="bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
             <CardContent className="p-4 sm:p-8 flex flex-col h-full">
               <div className="mb-4 sm:mb-6">
-                <Users className="w-8 sm:w-12 h-8 sm:h-12 text-teal-600" />
+                <Users aria-hidden="true" className="w-8 sm:w-12 h-8 sm:h-12 text-teal-600" />
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold text-teal-800 mb-3 sm:mb-4">
                 Un accompagnement humain et sur mesure
