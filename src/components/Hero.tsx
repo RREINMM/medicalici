@@ -78,6 +78,22 @@ export const Hero = () => {
             </div>
           </div>
         </div>
+        
+        {/* Qualiopi certification logo */}
+        <div className="mt-12 sm:mt-20 flex justify-center">
+          <div className="bg-white/90 p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+            <div className="flex flex-col items-center gap-2">
+              <img 
+                src="/lovable-uploads/68c324aa-25cf-4680-9d69-3f942d2a8da6.png" 
+                alt="Certification Qualiopi - Processus certifié" 
+                className="h-16 sm:h-20 w-auto"
+              />
+              <p className="text-xs sm:text-sm text-gray-600 font-medium text-center">
+                Notre centre de formation est certifié Qualiopi
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
