@@ -32,7 +32,16 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
-          ui: ['@/components/ui'],
+          // Fix: Reference specific UI components instead of the whole directory
+          ui: [
+            '@/components/ui/button',
+            '@/components/ui/card',
+            '@/components/ui/input',
+            '@/components/ui/textarea',
+            '@/components/ui/toast',
+            '@/components/ui/toaster',
+            '@/components/ui/sonner'
+          ]
         }
       }
     }
