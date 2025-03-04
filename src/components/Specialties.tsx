@@ -36,7 +36,7 @@ const formations = [
     icon: ShieldCheck, 
     name: "Prévention des risques", 
     description: "Programme intensif de formation à la gestion des risques sanitaires, à l'application des normes d'hygiène et au suivi des protocoles qualité.\n\nMaîtrisez les techniques de prévention des infections nosocomiales et la gestion des risques en établissement de santé.",
-    image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Formation à la prévention des risques sanitaires et gestion des protocoles de sécurité",
     subPoints: [
       "Prévention des infections nosocomiales",
@@ -116,3 +116,4 @@ export const Specialties = () => {
     </section>
   );
 };
+
