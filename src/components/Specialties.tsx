@@ -1,9 +1,12 @@
 
 import { 
   Stethoscope,
-  UserCog,
   ShieldCheck,
-  MonitorSmartphone
+  MonitorSmartphone,
+  HeartPulse,
+  Brain,
+  FirstAid,
+  TestTubes
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -12,8 +15,7 @@ const formations = [
     icon: Stethoscope, 
     name: "Compétences métier et spécialisation", 
     description: "Développement approfondi des compétences en soins, prévention et gestion sanitaire.\nNos formations couvrent les dernières avancées médicales et les protocoles de soins actualisés.\nVous bénéficierez d'une expertise pratique directement applicable dans votre quotidien professionnel.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Professionnel de santé utilisant du matériel médical moderne lors d'une formation spécialisée",
+    illustrationIcon: HeartPulse,
     subPoints: [
       "Protocoles de soins avancés",
       "Gestion des urgences médicales",
@@ -21,11 +23,10 @@ const formations = [
     ]
   },
   { 
-    icon: UserCog, 
+    icon: TestTubes, 
     name: "Santé, hygiène et sécurité alimentaire", 
     description: "Formation complète aux bonnes pratiques pour garantir une offre conforme aux exigences de santé publique.\n\nApprenez les protocoles d'hygiène essentiels et les normes de sécurité alimentaire en vigueur dans le secteur médical et paramédical.",
-    image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Formation sur les normes d'hygiène et de sécurité alimentaire en milieu médical",
+    illustrationIcon: FirstAid,
     subPoints: [
       "Normes HACCP en milieu médical",
       "Sécurité alimentaire des patients",
@@ -36,8 +37,7 @@ const formations = [
     icon: ShieldCheck, 
     name: "Prévention des risques", 
     description: "Programme intensif de formation à la gestion des risques sanitaires, à l'application des normes d'hygiène et au suivi des protocoles qualité.\n\nMaîtrisez les techniques de prévention des infections nosocomiales et la gestion des risques en établissement de santé.",
-    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Formation à la prévention des risques sanitaires et gestion des protocoles de sécurité",
+    illustrationIcon: Brain,
     subPoints: [
       "Prévention des infections nosocomiales",
       "Gestion des risques biologiques",
@@ -48,8 +48,7 @@ const formations = [
     icon: MonitorSmartphone, 
     name: "Accompagnement digital", 
     description: "Modernisez vos pratiques médicales grâce à la digitalisation.\n\nDécouvrez comment intégrer les nouvelles technologies dans votre pratique quotidienne tout en maintenant la qualité des soins et la sécurité des patients.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Formation à l'utilisation des outils numériques dans le secteur médical et paramédical",
+    illustrationIcon: Stethoscope,
     subPoints: [
       "Dossier médical numérique",
       "Téléconsultation",
@@ -81,14 +80,11 @@ export const Specialties = () => {
               key={index} 
               className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:translate-y-[-4px] hover:shadow-xl bg-white"
             >
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={formation.image} 
-                  alt={formation.imageAlt}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
+              <div className="relative h-48 overflow-hidden flex items-center justify-center bg-gradient-to-br from-teal-50 to-cyan-50">
+                <formation.illustrationIcon 
+                  className="w-32 h-32 text-teal-500/80 transition-transform duration-300 group-hover:scale-110"
+                  aria-hidden="true"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent" />
                 <div className="absolute top-4 left-4 bg-white p-3 rounded-lg shadow-md">
                   <formation.icon aria-hidden="true" className="w-6 h-6 text-teal-600" />
                 </div>
