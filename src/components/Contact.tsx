@@ -1,9 +1,48 @@
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
 
 export const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Ici vous pourriez ajouter la logique pour envoyer le message à un serveur
+    console.log("Formulaire soumis:", formData);
+    
+    // Afficher le toast de confirmation
+    toast({
+      title: "Message envoyé !",
+      description: "Nous vous répondrons dans les plus brefs délais.",
+      variant: "default",
+    });
+    
+    // Réinitialiser le formulaire
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
+  };
+
   return (
     <section id="contact" className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 py-12 sm:py-16">
       <div className="container mx-auto px-4">
@@ -30,6 +69,7 @@ export const Contact = () => {
           <form 
             className="space-y-4 sm:space-y-6 bg-white/80 backdrop-blur-sm p-4 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
             aria-labelledby="contact-form"
+            onSubmit={handleSubmit}
           >
             <div className="sr-only" id="contact-form">Formulaire de contact</div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -41,6 +81,9 @@ export const Contact = () => {
                   placeholder="Nom" 
                   className="border-teal-200 focus-visible:ring-teal-500" 
                   aria-required="true"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
                 />
               </div>
               <div>
@@ -51,6 +94,9 @@ export const Contact = () => {
                   placeholder="Email" 
                   className="border-teal-200 focus-visible:ring-teal-500" 
                   aria-required="true"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                 />
               </div>
             </div>
@@ -60,7 +106,9 @@ export const Contact = () => {
                 type="text" 
                 id="subject"
                 placeholder="Sujet" 
-                className="border-teal-200 focus-visible:ring-teal-500" 
+                className="border-teal-200 focus-visible:ring-teal-500"
+                value={formData.subject}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -70,6 +118,9 @@ export const Contact = () => {
                 id="message"
                 className="h-24 sm:h-32 border-teal-200 focus-visible:ring-teal-500" 
                 aria-required="true"
+                value={formData.message}
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="text-center">
