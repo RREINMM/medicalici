@@ -1,3 +1,4 @@
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
@@ -18,5 +19,22 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  // Set base path to '/' for root deployment or to subdirectory if needed
+  base: '/',
+  // Configure build options for optimal production deployment
+  build: {
+    outDir: 'dist',
+    minify: 'terser',
+    sourcemap: false,
+    // Split chunks for better caching
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          ui: ['@/components/ui'],
+        }
+      }
+    }
   },
 }));

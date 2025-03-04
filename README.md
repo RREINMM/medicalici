@@ -1,3 +1,4 @@
+
 # Welcome to your Lovable project
 
 ## Project info
@@ -36,19 +37,36 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## How to deploy to GoDaddy
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Step 1: Build the application
+Run the build command to create a production-ready version of your app:
+```sh
+npm run build
+```
 
-**Use GitHub Codespaces**
+This will create a `dist` folder with all the static files needed to serve your application.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Step 2: Upload to GoDaddy
+1. Log in to your GoDaddy account and access your cPanel or File Manager
+2. Navigate to the public_html folder (or your preferred deployment directory)
+3. Upload all the files from the `dist` folder to this directory
+
+### Step 3: Configure for client-side routing (important!)
+If you're using React Router (which this project does), you'll need to create a .htaccess file to handle client-side routing:
+
+```
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+```
+
+Upload this .htaccess file to the same directory where you uploaded your dist files.
 
 ## What technologies are used for this project?
 
@@ -60,10 +78,10 @@ This project is built with .
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Alternative deployment options
 
-Simply open [Lovable](https://lovable.dev/projects/6f97df7e-f15b-451c-a850-b36f05720f45) and click on Share -> Publish.
+You can also open [Lovable](https://lovable.dev/projects/6f97df7e-f15b-451c-a850-b36f05720f45) and click on Share -> Publish.
 
 ## I want to use a custom domain - is that possible?
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+You can deploy this application to any hosting provider that supports static websites, including your GoDaddy hosting account.
