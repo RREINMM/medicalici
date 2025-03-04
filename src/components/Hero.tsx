@@ -3,6 +3,13 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Header Sticker */}
@@ -14,6 +21,7 @@ export const Hero = () => {
           <Button 
             variant="ghost" 
             className="text-white hover:text-white/90 text-xs sm:text-sm px-2 sm:px-4 py-1"
+            onClick={scrollToContact}
           >
             Contactez-nous
           </Button>
